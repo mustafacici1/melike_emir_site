@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melike Emir - Sanatçı Portfolyosu</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Özel Fare İmleci (Mantar Emojisi) -->
+  <div id="customCursor">🌟</div>
+
+  <!-- Arka Plan Baloncukları -->
+  <div id="bubbles"></div>
+
+  <!-- Sticky Header (Sadece Navigasyon) -->
+  <header id="header">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#landing">Ana Sayfa</a></li>
+        <li><a href="#about">Hakkında</a></li>
+        <li><a href="#portfolio1">Portfolyo</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Yan Kontroller -->
+  <!-- Sol: Font Boyutu -->
+  <div id="fontSizeControl" class="side-control left-control">
+    <label for="textSizeSlider">Metin Boyutu</label>
+    <input type="range" id="textSizeSlider" min="10" max="50" step="1" value="16" />
+  </div>
+
+  <!-- Sağ: Font Kalınlığı -->
+  <div id="fontWeightControl" class="side-control right-control">
+    <label for="fontWeightSlider">Kalınlık</label>
+    <input type="range" id="fontWeightSlider" min="100" max="1000" step="100" value="400" />
+  </div>
+
+  <!-- Zoom Kontrolü: Draggable Yeşil Top -->
+  <div id="zoomControl" class="zoom-control">
+    <div id="zoomBall"></div>
+  </div>
+
+  <!-- Tüm İçerikleri Kapsayan Wrapper -->
+  <div id="contentWrapper">
+    <!-- Landing Bölümü (Parallax arka plan) -->
+    <section id="landing" class="section landing-section parallax">
+      <div class="overlay">
+        <h1>Hoş Geldiniz</h1>
+        <button id="startBtn" class="btn">BAŞLA</button>
+      </div>
+    </section>
+
+    <!-- Hakkında Bölümü -->
+    <section id="about" class="section about-section">
+      <div class="content">
+        <h1>Melike Emir</h1>
+        <p>
+          Grafik tasarım ve sanatın kesişiminde, yaratıcı vizyonumla dünyayı renklendiriyorum.
+          Her projeye farklı bir soluk getiren yaklaşımım, benzersiz işler ortaya koyuyor.
+        </p>
+        <div class="scroll-down" data-target="portfolio1">&#x2193;</div>
+      </div>
+    </section>
+
+    <!-- Portfolyo Bölümleri -->
+    <section id="portfolio1" class="section portfolio-section">
+      <div class="bg-slider">
+        <img src="work1a.jpg" alt="Work 1a" class="slide active" />
+        <img src="work1b.jpg" alt="Work 1b" class="slide" />
+        <img src="work1c.jpg" alt="Work 1c" class="slide" />
+      </div>
+      <div class="portfolio-content">
+        <h2>Bölüm 1</h2>
+        <p>Bölüm 1 ile ilgili detaylı açıklama ve örnek işler burada sergileniyor.</p>
+        <div class="scroll-down" data-target="portfolio2">&#x2193;</div>
+      </div>
+    </section>
+
+    <section id="portfolio2" class="section portfolio-section">
+      <div class="bg-slider">
+        <img src="work2a.jpg" alt="Work 2a" class="slide active" />
+        <img src="work2b.jpg" alt="Work 2b" class="slide" />
+        <img src="work2c.jpg" alt="Work 2c" class="slide" />
+      </div>
+      <div class="portfolio-content">
+        <h2>Bölüm 2</h2>
+        <p>Bölüm 2 projelerinde farklı teknikler ve yenilikçi yaklaşımlar ön planda.</p>
+        <div class="scroll-down" data-target="portfolio3">&#x2193;</div>
+      </div>
+    </section>
+
+    <section id="portfolio3" class="section portfolio-section">
+      <div class="bg-slider">
+        <img src="work3a.jpg" alt="Work 3a" class="slide active" />
+        <img src="work3b.jpg" alt="Work 3b" class="slide" />
+        <img src="work3c.jpg" alt="Work 3c" class="slide" />
+      </div>
+      <div class="portfolio-content">
+        <h2>Bölüm 3</h2>
+        <p>Bölüm 3’te sanatsal deneylerin ve konsept çalışmaların örnekleri yer alıyor.</p>
+        <div class="scroll-down" data-target="portfolio4">&#x2193;</div>
+      </div>
+    </section>
+
+    <section id="portfolio4" class="section portfolio-section">
+      <div class="bg-slider">
+        <img src="work4a.jpg" alt="Work 4a" class="slide active" />
+        <img src="work4b.jpg" alt="Work 4b" class="slide" />
+        <img src="work4c.jpg" alt="Work 4c" class="slide" />
+      </div>
+      <div class="portfolio-content">
+        <h2>Bölüm 4</h2>
+        <p>Bölüm 4’te farklı medya ve tekniklerle oluşturulmuş projeler sergileniyor.</p>
+        <div class="scroll-down" data-target="portfolio5">&#x2193;</div>
+      </div>
+    </section>
+
+    <section id="portfolio5" class="section portfolio-section">
+      <div class="bg-slider">
+        <img src="work5a.jpg" alt="Work 5a" class="slide active" />
+        <img src="work5b.jpg" alt="Work 5b" class="slide" />
+        <img src="work5c.jpg" alt="Work 5c" class="slide" />
+      </div>
+      <div class="portfolio-content">
+        <h2>Bölüm 5</h2>
+        <p>Bölüm 5’te son projeler ve geleceğe yönelik çalışmalar yer alıyor.</p>
+        <div class="scroll-down" data-target="gallery">&#x2193;</div>
+      </div>
+    </section>
+
+    <!-- Galeri Bölümü -->
+    <section id="gallery" class="section gallery-section">
+      <div class="content">
+        <h2>Galeri</h2>
+        <p>Farklı projelerden seçilmiş kareler ve detaylar burada yer alıyor.</p>
+        <div class="gallery-grid">
+          <img src="gallery1.jpg" alt="Gallery 1" />
+          <img src="gallery2.jpg" alt="Gallery 2" />
+          <img src="gallery3.jpg" alt="Gallery 3" />
+          <img src="gallery4.jpg" alt="Gallery 4" />
+        </div>
+        <div class="scroll-down" data-target="contact">&#x2193;</div>
+      </div>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="section contact-section">
+      <div class="content">
+        <h2>İletişim</h2>
+        <p>Benimle çalışmak veya projeler hakkında konuşmak için aşağıdaki formu doldurabilirsin.</p>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Adınız" required />
+          <input type="email" name="email" placeholder="Emailiniz" required />
+          <textarea name="message" placeholder="Mesajınız" required></textarea>
+          <button type="submit" class="btn">Gönder</button>
+        </form>
+        <div class="social-media">
+          <a href="https://www.instagram.com/melikeliemir/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Melike Emir. Tüm hakları saklıdır.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
